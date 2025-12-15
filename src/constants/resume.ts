@@ -48,19 +48,19 @@ const bio = [
 ];
 
 const workExperiences: WorkExperience[] = [
-  {
-    company: 'WishWeaver',
-    role: 'Frontend Developer',
-    startDate: 'AUG 2025',
-    endDate: 'PRESENT',
-    achievements: [
-      'Developed and maintained the frontend of WishWeaver, an online platform for creating group appreciation cards with contributions from multiple people.',
-      'Built responsive, user-friendly interfaces using React, TypeScript, and modern web technologies.',
-      'Implemented features for card customization, collaborative contributions, and multimedia messaging (text, photos, videos, GIFs).',
-      'Collaborated with designers and backend engineers to deliver seamless user experiences across all devices.',
-      'Optimized application performance and ensured accessibility standards compliance.',
-    ],
-  },
+  // {
+  //   company: 'WishWeaver',
+  //   role: 'Frontend Developer - Freelance',
+  //   startDate: 'AUG 2025',
+  //   endDate: 'PRESENT',
+  //   achievements: [
+  //     'Developed and maintained the frontend of WishWeaver, an online platform for creating group appreciation cards with contributions from multiple people.',
+  //     'Built responsive, user-friendly interfaces using React, TypeScript, and modern web technologies.',
+  //     'Implemented features for card customization, collaborative contributions, and multimedia messaging (text, photos, videos, GIFs).',
+  //     'Collaborated with designers and backend engineers to deliver seamless user experiences across all devices.',
+  //     'Optimized application performance and ensured accessibility standards compliance.',
+  //   ],
+  // },
   {
     company: 'Bumpa',
     role: 'Software Engineer',

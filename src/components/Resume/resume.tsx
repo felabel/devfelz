@@ -2,6 +2,7 @@ import { resume } from '@/constants/resume';
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Helmet from '../Utils/SEO/helmet';
+import resumePDF from '@/assets/files/01Felicity_resume.pdf';
 import './resume.scss';
 
 type ResumeProp = {
@@ -22,8 +23,8 @@ export default function Resume(props: ResumeProp) {
           <h2>{resume.name}</h2>
           <div className="buttons">
             <a
-              href="/Felicity_Abel_CV.pdf"
-              download="Felicity_Abel_CV.pdf"
+              href={resumePDF}
+              download="01Felicity_resume.pdf"
               rel="noopener noreferrer"
             >
               <small>
