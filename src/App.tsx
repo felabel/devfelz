@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
-import logo from './assets/svgs/m-imyke.svg';
+import logo from './assets/svgs/felz.svg';
 import Base from './components/Base/base';
 import Mobile from './components/Base/mobile';
 import Contact from './components/Contact/contact';
@@ -59,13 +59,13 @@ function App() {
               </Routes>
             </div>
             <div className="social_buttons">
-              <a href="https://github.com/imykie" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Feliz-Dee" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="https://twitter.com/_imyke" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/devfelz" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="https://www.linkedin.com/in/imykel/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/devfelicity/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin"></i>
               </a>
             </div>

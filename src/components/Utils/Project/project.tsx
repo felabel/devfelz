@@ -21,6 +21,7 @@ export default function Project(props: IProject) {
       <div className="box">
         <div className="project_details">
           <h3> {title} </h3>
+          
           <p> {description} </p>
           <small className="py-3"> {stack} </small>
         </div>

@@ -39,160 +39,130 @@ export type Resume = {
   hobbies: string[];
 };
 
-const name = 'Michael Olatunji';
+const name = 'Felicity Abel';
 
 const bio = [
-  'As a Computer Engineering student and Software Engineer, I am passionate about using technology to solve real-world problems. With a strong foundation in Computer Science and Engineering principles and programming languages such as JavaScript, Python, C++ and Java. I am constantly seeking opportunities to learn and apply my skills in new and innovative ways.',
-  'In addition to my academic pursuits, I have completed internships at leading technology companies, where I have gained valuable experience working on complex software projects. I am a team player who enjoys collaborating with others and sharing knowledge.',
+  'Frontend engineer with 5 years of experience delivering optimized, user-focused web applications in e-commerce and fintech. Skilled in React.js, TypeScript, and automated testing. Increased grocery store sales by 20% through rebuilding an online grocery store at Pricepally. Contributed to ₦1 billion in sales in a month at Bumpa. Adept at collaborating with cross-functional teams to deliver scalable, accessible applications.',
+  'I am passionate about building clean, efficient, and user-focused software solutions. With a commitment to innovation and attention to detail, I strive to create applications that not only perform seamlessly but also deliver exceptional user experiences.',
   'I am excited to continue learning and growing as a software engineer, and I am eager to apply my skills and knowledge to tackle challenging problems and make a positive impact on the world.',
 ];
 
 const workExperiences: WorkExperience[] = [
   {
-    company: 'JP Morgan Chase & Co',
-    role: 'Software Engineer Intern',
-    startDate: 'JUN 2023',
-    endDate: 'AUG 2023',
+    company: 'WishWeaver',
+    role: 'Frontend Developer',
+    startDate: 'AUG 2025',
+    endDate: 'PRESENT',
     achievements: [
-      'Co-Led a team of 3 interns, designing and developing an end-to-end social network graph project for employees to find how they are connected to other people within the firm, improving employee experience.',
-      'Developed a Batch Processing application which transforms Oracle SQL data into Neo4j Graph data using Spring Batch',
-      'Developed a RESTful backend service to compute the shortest path, all paths, and path recommendations in the employee network',
-      'Implemented draggable and interactive graphs visualization for the social network'
+      'Developed and maintained the frontend of WishWeaver, an online platform for creating group appreciation cards with contributions from multiple people.',
+      'Built responsive, user-friendly interfaces using React, TypeScript, and modern web technologies.',
+      'Implemented features for card customization, collaborative contributions, and multimedia messaging (text, photos, videos, GIFs).',
+      'Collaborated with designers and backend engineers to deliver seamless user experiences across all devices.',
+      'Optimized application performance and ensured accessibility standards compliance.',
     ],
   },
   {
-    company: 'Cruise LLC',
-    role: 'Software Engineer Intern',
+    company: 'Bumpa',
+    role: 'Software Engineer',
+    startDate: 'MAR 2023',
+    endDate: 'PRESENT',
+    achievements: [
+      'Played a key engineering role in helping Bumpa reach ₦1 billion in sales within a month by delivering scalable and high-performing frontend features using React, Redux, and TypeScript.',
+      'Led development of mission-critical features: CRM dashboards, multi-location management, POS systems, and Google/Facebook ad integrations.',
+      'Architected and shipped responsive UI components with strong emphasis on WCAG accessibility, SEO, and performance optimization.',
+      'Wrote modular, reusable code using component-driven design systems and collaborated with product, design, and backend engineers to align with business needs. Developed E-commerce Solutions: Delivered key features such as multi-location management, CRM tools, point-of-sale software, and ad integrations (Google/Facebook) to streamline business operations.',
+      'Cross-functional collaboration: Partnered with product, design, and backend teams to scope features, plan sprints, and ensure scalable, user-centric solutions through thorough handovers and iterations.',
+      'Mentored a frontend intern, guiding them through modern JavaScript, React, and development best practices — contributing to team capacity and skill growth.',
+    ],
+  },
+  {
+    company: 'Regxta',
+    role: 'Frontend Engineer',
     startDate: 'SEP 2022',
-    endDate: 'DEC 2022',
+    endDate: 'MAR 2023',
     achievements: [
-      'Helped built the world’s most advanced self-driving vehicles to safely connect people with places, things, and experiences they care about',
-      'Collaborated alongside multiple teams to bring forth multiple deliverables that improved end-to-end metrics gathering, enabling the Simulation department to measure the impact of its various efforts on key success metrics',
-      'Contributed to Cruise AI Simulation Platform Tools which empowers AV engineers to run simulations at scale, accelerating the development of Autonomous Vehicles by more than 4x',
-      'Implemented NPCs objective profile conversion features for Planning Simulation (PSIM) and Matrix on the Scenario Editor Software, which prevent data loss while editing scenarios and maintain states between NPCs objective profiles',
+      'Led the frontend team in developing a robust fintech web application, providing tools for managing loans, agents, customers, transactions, and expenses.',
+      'Architected and implemented a comprehensive Admin Dashboard with full CRUD functionality, reducing manual workflows by over 70%.',
+      'Collaborated cross-functionally with product managers, designers, and backend developers to ensure alignment with business goals and user needs.',
+      'Championed clean code practices, reusable components, and performance-optimized architecture using React.js and TypeScript.',
     ],
   },
   {
-    company: 'JP Morgan Chase & Co',
-    role: 'Software Engineer Intern',
-    startDate: 'JUN 2022',
-    endDate: 'AUG 2022',
+    company: 'Pricepally',
+    role: 'Frontend Engineer',
+    startDate: 'SEP 2022',
+    endDate: 'MAR 2023',
     achievements: [
-      'Designed and developed the prototype of a new Global Search Platform that enables searching of internal trades data to make search speed at least 10x faster and flexible search queries possible using Spring Boot and Elasticsearch',
-      'Configured and deployed Kafka Connect (sink connector) to ship data from the Kafka Cluster to the Elasticsearch Cluster',
-      'Automated the visualization and analytics of data as they are shipped in real-time using Kibana',
+      'Rebuilt the company\'s online grocery platform by migrating from plain JavaScript to a fully optimized React.js + Redux web application.',
+      'Enhanced platform performance, responsiveness, and user experience, resulting in a 20% increase in online sales.',
+      'Collaborated with UI/UX designers, product managers, and backend engineers to translate business goals into scalable, maintainable code.',
+      'Implemented component-based architecture and ensured cross-browser/mobile compatibility across key pages and flows.',
     ],
   },
   {
-    company: 'Block Knowledge',
-    role: 'Software and DevOps Engineer',
-    startDate: 'DEC 2020',
-    endDate: 'DEC 2021',
+    company: 'Taquatech',
+    role: 'Frontend Engineer',
+    startDate: 'JAN 2020',
+    endDate: 'MAY 2021',
     achievements: [
-      'Designed the database and system architecture for Kadogo (turn everyday purchases into charitable donations)',
-      'Led the kadogo backend team of 2 - 3 people',
-      'Built the entire backend of the MVP version, which raised $100,000 in funding',
-      'Optimized the backend to leverage on cloud services like serverless functions and messaging systems to increase performance and prevent downtime of the critical part of the application',
-      'Developed APIs for the mobile application, merchant and NGO dashboard',
-      'Facilitated the use of continuous integration and continuous deployment tools to reduce code shipping time and increase collaboration and productivity among the developers',
-      'Implemented the spare change and cashback donation algorithms',
-      'Set up Autoscaling, Load balancers and failover servers on AWS for development, staging, production environment',
-    ],
-  },
-  {
-    company: 'Powerjamb',
-    role: 'Software and DevOps Engineer Intern',
-    startDate: 'JUN 2019',
-    endDate: 'SEP 2020',
-    achievements: [
-      'Managed infrastructure as code using AWS CloudFormation',
-      'Redesigned the landing page to 3x faster',
-      'Developed a web mobile-first examination application',
-      'Created Dockerfiles and built docker images for the microservices to run on Kubernetes cluster',
-      'Created and managed the deployment of microservices cluster to EKS using Docker, Kubernetes, Helm, and Jenkins',
-      'Experience with Amazon services such as AWS, VPC, S3, EC2 Relational Database (RDS), Document DB, Elastic Load Balancing, Autoscaling, ECR, ECS, Lambda, IAM, EKS, Beanstalk, and CloudFormation',
-    ],
-  },
-  {
-    company: 'Soft Quest Incorporated',
-    role: 'Software Enginer Intern',
-    startDate: 'SEP 2018',
-    endDate: 'MAR 2019',
-    achievements: [
-      'Produced clean, validation-ready code for given project needs',
-      'Developed a basic Banking Web Application with Angular and PHP',
-      'Developed a Car Racing game using JavaScript and HTML5 canvas',
-      'Built an advanced Scientific Calculator, Inventory System, Timer, Countdown on the Web and many other self-development Projects',
+      'Worked as a Frontend Engineer to design and develop an e-learning solution tailored for high schools and universities, enhancing their ability to deliver digital education effectively.',
+      'Led a 6-month coaching program for a class of 5 interns, teaching HTML, CSS, and JavaScript, which resulted in a 30% increase in intern retention rate.',
+      'Actively participated in software development projects and collaborated with cross-functional teams to ensure timely delivery of solutions.',
     ],
   },
 ];
 
 const skills: Skill[] = [
   {
-    title: 'Languages',
-    body: ['JavaScript', 'TypeScript', 'Python', 'C++', 'Java', 'Go'],
+    title: 'Frontend',
+    body: ['ReactJS', 'TypeScript', 'NextJS', 'React Query (RTK)', 'Redux', 'Context API', 'Web Accessibility & Performance optimization', 'Apollo/GraphQL'],
   },
   {
-    title: 'Frameworks/Libraries',
-    body: ['React', 'Vue', 'Nodejs', 'Nestjs', 'Nextjs', 'GraphQL', 'Flask'],
+    title: 'Testing/Debugging',
+    body: ['Jest', 'Cypress', 'React Testing Library', 'Vitest'],
   },
   {
-    title: 'Storages/Databases',
-    body: ['SQL', 'PostgreSQL', 'MongoDB', 'Kafka', 'ElasticSearch', 'Neo4j'],
+    title: 'Backend',
+    body: ['NodeJS', 'Express', 'MongoDB', 'Supabase'],
   },
   {
-    title: 'Tooling',
-    body: ['Linux', 'Git', 'Docker', 'Kubernetes', 'AWS', 'GCP'],
+    title: 'Tooling and Workflow',
+    body: ['Git', 'Clickup', 'Agile Methodologies'],
   },
 ];
 
 const educations: Education[] = [
   {
-    title: 'B.Sc Computer Engineering at Obafemi Awolowo University',
-    endDate: 'MAY 2025',
+    title: 'Software Engineering Training at ALX Africa',
+    endDate: 'OCTOBER 2024',
     relevant: [
-      'Introduction to Computing',
-      'Introduction to Programming',
-      'Digital Computer Systems',
-      'Calculus I & II & III',
-      'Vector Analysis',
+      'Frontend Development Specialization: Mastered modern JavaScript (ES6), TypeScript, React.js, Redux, advanced HTML/CSS, and responsive design. Completed a Capstone Thesis on "Technological Advancements within the current Mechatronics Industry".',
+      'Backend Development Specialization: Developed skills in Node.js, Python, MySQL, NoSQL, Redis, and authentication systems. Implemented solutions for pagination, caching, queuing, and data management, with a strong focus on unit and integration testing.',
     ],
   },
   {
-    title: 'Smith International Baptist Academy, Ogbomoso',
-    startDate: 'SEP 2012',
-    endDate: 'JUL 2018',
+    title: 'B.Sc. Home Economics at University of Uyo, Nigeria',
+    startDate: 'MAY 2014',
+    endDate: 'MAY 2016',
     relevant: [],
   },
 ];
 
 const certifications: Certification[] = [
   {
-    title: 'Cloud DevOps Engineer Nanodegree, Udacity',
-    date: 'MAY 2020',
-  },
-  {
-    title: 'Microsoft Certified: Azure Fundamentals (AZ – 900)',
-    date: 'JUL 2020',
+    title: 'Software Engineering certificate, ALX Africa',
+    date: 'OCTOBER 2024',
   },
 ];
 
 const languages: Language[] = [
   {
     name: 'English',
-    level: 'PROFICIENT',
-  },
-  {
-    name: 'Yoruba',
-    level: 'PROFICIENT',
-  },
-  {
-    name: 'Spanish',
-    level: 'BEGINNER',
+    level: 'NATIVE',
   },
 ];
 
-const hobbies = ['Learning', 'Playing the piano', 'Lifting', 'Football/Soccer'];
+const hobbies = ['Learning', 'Reading', 'Coding', 'Exploring new technologies'];
 
 export const resume: Resume = {
   name,

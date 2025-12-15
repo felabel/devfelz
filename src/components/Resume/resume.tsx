@@ -16,14 +16,14 @@ export default function Resume(props: ResumeProp) {
 
   return (
     <div className="resume">
-      <Helmet title="My Resume" name="Michael Olatunji Resume" content="Michael Olatunji - Software Engineer Resume" />
+      <Helmet title="My Resume" name="Felicity Abel Resume" content="Felicity Abel - Software Engineer Resume" />
       <div className="resume_container">
         <div className="top_row">
           <h2>{resume.name}</h2>
           <div className="buttons">
             <a
-              href="https://drive.google.com/file/d/1AaNUXytycyNR3fnZ2xgW30SmCh4RcYkn/view?usp=sharing"
-              target="_blank"
+              href="/Felicity_Abel_CV.pdf"
+              download="Felicity_Abel_CV.pdf"
               rel="noopener noreferrer"
             >
               <small>

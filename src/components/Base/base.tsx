@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import myPic from '../../assets/imgs/my-pic.jpg';
+import myPic from '../../assets/imgs/image.png';
 import arrow from '../../assets/svgs/arrow.svg';
 import navLine from '../../assets/svgs/menu-line.svg';
 import './base.scss';
@@ -11,7 +11,7 @@ export default function Base({ menu }: any) {
       <div className="hero">
         <div className="intro_box">
           <h1>
-            Hello! I'm <br /> Michael Olatunji.
+            Hello! I'm <br /> Felicity Abel.
           </h1>
           <div className="my-pic">
             <img className="w-48 h-48 rounded-full" src={myPic} alt="my-avatar" />
@@ -21,10 +21,8 @@ export default function Base({ menu }: any) {
         <div className="description">
           <p>
             <span>
-              I'm a <span className="highlight">Software Engineer</span> and{' '}
-              <span className="highlight">a junior Computer Engineering major</span> with passion for problem-solving, strong
-              foundation in computer science principles and proven track record of delivering high-quality and scalable
-              code.
+              I'm a <span className="highlight">Professional Software Engineer</span> with{' '}
+              <span className="highlight">5 years of experience</span> delivering optimized, user-focused web applications in e-commerce and fintech. Passionate about building clean, efficient software solutions that deliver exceptional user experiences.
             </span>
           </p>
         </div>
@@ -59,18 +57,18 @@ export default function Base({ menu }: any) {
       </nav>
 
       <div className="footer">
-        <img className="w-16 h-16 rounded-full" src={myPic} alt="" />
+        <img className="w-16 h-16 rounded-full object-contain" src={myPic} alt="" />
         <div className="social">
-          <a href="https://github.com/imykie" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/felabel/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i> Github
             <img src={arrow} alt="pointer" />
           </a>
 
-          <a href="https://twitter.com/_imyke" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-twitter"></i> Twitter <img src={arrow} alt="pointer" />
+          <a href="https://x.com/dev_felz" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-twitter"></i> X <img src={arrow} alt="pointer" />
           </a>
 
-          <a href="https://linkedin.com/in/imykel" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/devfelicity" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i> LinkedIn <img src={arrow} alt="pointer" />
           </a>
         </div>

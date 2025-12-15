@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react';
 import logo from '../../../assets/svgs/logo.svg';
+import xLogo from '../../../assets/svgs/x-logo.svg';
 import { Link } from 'react-router-dom';
 import './header.scss';
 
@@ -13,7 +14,7 @@ export default function Header() {
       <div className="header_wrapper">
         <div className="logo_container pt-4">
           <Link to="/">
-            <img className="w-32" src={logo} alt="imyke logo" />
+            <img className="w-32" src={logo} alt="Felicity Abel logo" />
           </Link>
         </div>
 
@@ -48,17 +49,17 @@ export default function Header() {
 
             <div className="social_box">
               <h3>Connect With Me</h3>
-              <a href="mailto:myke.olatunji@gmail.com" className="mt-4">
-                myke.olatunji@gmail.com
+              <a href="mailto:felicityabel99@gmail.com" className="mt-4">
+                felicityabel99@gmail.com
               </a>
               <div className="social_icons">
-                <a href="https://github.com/imykie">
+                <a href="https://github.com/Feliz-Dee">
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="https://twitter.com/_imyke">
+                <a href="https://twitter.com/devfelz">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/imykel/">
+                <a href="https://www.linkedin.com/in/devfelicity/">
                   <i className="fab fa-linkedin"></i>
                 </a>
               </div>
