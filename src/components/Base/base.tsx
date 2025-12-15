@@ -57,7 +57,7 @@ export default function Base({ menu }: any) {
       </nav>
 
       <div className="footer">
-        <img className="w-16 h-16 rounded-full object-contain" src={myPic} alt="" />
+        {/* <img className="w-16 h-16 rounded-full object-contain" src={myPic} alt="" /> */}
         <div className="social">
           <a href="https://github.com/felabel/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i> Github
