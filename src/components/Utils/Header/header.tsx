@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import logo from '../../../assets/svgs/logo.svg';
+import logo from '../../../assets/svgs/felz.png';
 import xLogo from '../../../assets/svgs/x-logo.svg';
 import { Link } from 'react-router-dom';
 import './header.scss';

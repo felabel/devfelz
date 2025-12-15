@@ -41,7 +41,8 @@
         p {
             font-size: var(--normal-font);
             line-height: 1.5;
-            color: #777778;
+            // color: #777778;
+            color: #fff;
             font-family: 'air-light';
             font-size: 14px;
             margin-top: 10px;
@@ -63,14 +64,16 @@
         span {
             flex-grow: 1;
             height: 1px;
-            background-color: #777778;
+            // background-color: #777778;
+            background-color: #fff;
         }
     }
     
     .skills p {
         font-size: 14px;
         font-family: 'air-light';
-        color: #777778;
+        // color: #777778;
+        color: #fff;
         display: flex;
         margin: 0;
         line-height: 2;
@@ -85,7 +88,8 @@
 
             span {
                 font-size: 14px;
-                color: #777778;
+                // color: #777778;
+                color: #fff;
                 margin-left:5px;
             }
         }
@@ -97,14 +101,16 @@
         .description {
             display: block;
             line-height: 1.5;
-            color: #777778;
+            // color: #777778;
+            color: #fff;
             margin: 10px 0;
             padding: 0;
 
             p {
-                margin: 2px 0;
+                margin: 8px 0;
                 width: 100%;
-                color:  #777778;
+                // color:  #777778;
+                color: #fff;
                 font-size: 14px;
                 display: flex;
                 font-family: 'air-light';
