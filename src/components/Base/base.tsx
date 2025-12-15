@@ -13,9 +13,9 @@ export default function Base({ menu }: any) {
           <h1>
             Hello! I'm <br /> Felicity Abel.
           </h1>
-          <div className="my-pic">
-            <img className="w-48 h-48 rounded-full" src={myPic} alt="my-avatar" />
-          </div>
+          {/* <div className="my-pic w-48 h-48">
+            <img className="w-full h-full object-contain rounded-full" src={myPic} alt="my-avatar" />
+          </div> */}
         </div>
 
         <div className="description">
