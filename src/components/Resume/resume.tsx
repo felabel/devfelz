@@ -17,10 +17,13 @@ export default function Resume(props: ResumeProp) {
 
   return (
     <div className="resume">
-      <Helmet title="My Resume" name="Felicity Abel Resume" content="Felicity Abel - Software Engineer Resume" />
+      <Helmet title="My Resume" name="Felicity Abel Resume" content="Felicity Abel - Product-Minded Frontend Engineer Resume" />
       <div className="resume_container">
         <div className="top_row">
-          <h2>{resume.name}</h2>
+          <div>
+            <h2>{resume.name}</h2>
+            <p className="subheading">{resume.title}</p>
+          </div>
           <div className="buttons">
             <a
               href={resumePDF}
@@ -81,31 +84,33 @@ export default function Resume(props: ResumeProp) {
         </div>
 
         <div className="divider">
-          <p>Education</p>
+          <p>Education & Certifications</p>
           <span></span>
         </div>
 
         <div className="exp_container">
           <section className="experience">
             {resume.educations.map((education, key) => (
-              <p key={`education-${key}`} className="title">
-                {education.title}
-                <br />
-                <span>
-                  {education.startDate ? `${education.startDate} - ` : ''} {education.endDate}
-                </span>
-              </p>
+              <div key={`education-${key}`}>
+                <p className="title">
+                  {education.title}
+                  <br />
+                  <span>
+                    {education.startDate ? `${education.startDate} - ` : ''} {education.endDate}
+                  </span>
+                </p>
+                {education.relevant.length > 0 && (
+                  <article className="description">
+                    {education.relevant.map((item, i) => (
+                      <p key={`education-detail-${i}`}>
+                        <span>&#8594;</span>
+                        {item}
+                      </p>
+                    ))}
+                  </article>
+                )}
+              </div>
             ))}
-          </section>
-        </div>
-
-        <div className="divider">
-          <p>Certification</p>
-          <span></span>
-        </div>
-
-        <div className="exp_container">
-          <section className="experience">
             {resume.certifications.map((certification, key) => (
               <p key={`certification-${key}`} className="title">
                 {certification.title} <br />
@@ -124,7 +129,7 @@ export default function Resume(props: ResumeProp) {
           <section className="experience">
             {resume.languages.map((language, key) => (
               <p key={key} className="title">
-                {language.name} -<span>{language.level}</span>
+                {language.name} — <span>{language.level}</span>
               </p>
             ))}
           </section>
@@ -140,26 +145,8 @@ export default function Resume(props: ResumeProp) {
             <article className="description">
               <p>
                 {resume.hobbies.map((hobby, key) => (
-                  <span key={key}>{hobby}, </span>
+                  <span key={key}>{hobby}{key < resume.hobbies.length - 1 ? ', ' : ''}</span>
                 ))}
-              </p>
-            </article>
-          </section>
-        </div>
-
-        <div className="divider">
-          <p>Projects</p>
-          <span></span>
-        </div>
-
-        <div className="exp_container">
-          <section className="experience">
-            <article className="description">
-              <p>
-                Some selected projects can be found <span> </span>
-                <span className="underline">
-                  <Link to="/projects"> here</Link>
-                </span>
               </p>
             </article>
           </section>

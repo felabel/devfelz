@@ -21,8 +21,8 @@ export default function Base({ menu }: any) {
         <div className="description">
           <p>
             <span>
-              I'm a <span className="highlight">Professional Software Engineer</span> with{' '}
-              <span className="highlight">5 years of experience</span> delivering optimized, user-focused web applications in e-commerce and fintech. Passionate about building clean, efficient software solutions that deliver exceptional user experiences.
+              I'm a <span className="highlight">product-minded frontend engineer</span> with{' '}
+              <span className="highlight">5 years of experience</span> owning product experiences end-to-end — from architecture through shipped, measurable outcomes in React, TypeScript, and AI-native products.
             </span>
           </p>
         </div>
