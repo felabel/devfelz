@@ -25,11 +25,12 @@ type Prop = {
 const projects: Project[] = [
   {
     id: uuid(),
-    title: 'Bumpa Website',
-    description: 'Official Bumpa website showcasing innovative e-commerce solutions for businesses.',
+    title: 'AI Support Assistant (RAG)',
+    description:
+      'Built a retrieval-augmented customer support assistant with document upload, vector search, and tenant-scoped chat — embeddable on any merchant site via a script loader.',
     github: '',
-    live: 'https://www.getbumpa.com/',
-    stack: 'Nextjs + TailwindCSS',
+    live: 'https://ai-assistant-five-taupe.vercel.app/',
+    stack: 'Next.js + OpenAI + Supabase + TailwindCSS',
     isPrivate: true,
     isLive: true,
   },
@@ -45,16 +46,6 @@ const projects: Project[] = [
   },
   {
     id: uuid(),
-    title: 'Welisten Feedback Backend',
-    description: 'Backend API for Welisten feedback app with MongoDB, Mongoose and AI integration.',
-    github: 'https://github.com/felabel/welisten-ai-backend',
-    live: '',
-    stack: 'Node.js + MongoDB + Mongoose',
-    isPrivate: false,
-    isLive: false,
-  },
-  {
-    id: uuid(),
     title: 'CrossPay Borderless',
     description: 'Borderless payment platform for seamless cross-border transactions and payments.',
     github: '',
@@ -65,11 +56,11 @@ const projects: Project[] = [
   },
   {
     id: uuid(),
-    title: 'WishWeaver',
-    description: 'An online platform for creating group appreciation cards with contributions from multiple people.',
+    title: 'Bumpa Website',
+    description: 'Official Bumpa website showcasing innovative e-commerce solutions for businesses.',
     github: '',
-    live: 'https://mywishweaver.com',
-    stack: 'Nextjs + TailwindCSS + Redux',
+    live: 'https://www.getbumpa.com/',
+    stack: 'Nextjs + TailwindCSS',
     isPrivate: true,
     isLive: true,
   },
@@ -83,6 +74,28 @@ const projects: Project[] = [
     isPrivate: true,
     isLive: true,
   },
+  {
+    id: uuid(),
+    title: 'Welisten Feedback Backend',
+    description: 'Backend API for Welisten feedback app with MongoDB, Mongoose and AI integration.',
+    github: 'https://github.com/felabel/welisten-ai-backend',
+    live: '',
+    stack: 'Node.js + MongoDB + Mongoose',
+    isPrivate: false,
+    isLive: false,
+  },
+ 
+  {
+    id: uuid(),
+    title: 'WishWeaver',
+    description: 'An online platform for creating group appreciation cards with contributions from multiple people.',
+    github: '',
+    live: 'https://mywishweaver.com',
+    stack: 'Nextjs + TailwindCSS + Redux',
+    isPrivate: true,
+    isLive: true,
+  },
+
   {
     id: uuid(),
     title: 'Lareine Gold',
@@ -106,16 +119,7 @@ const projects: Project[] = [
   },
 
 
-  {
-    id: uuid(),
-    title: 'Aruwa Capital Website',
-    description: 'Modern platform showcasing the firm\'s investment philosophy, portfolio, and thought leadership.',
-    github: '',
-    live: 'https://aruwacapital.com',
-    stack: 'NextJs + TailwindCSS',
-    isPrivate: true,
-    isLive: true,
-  },
+
 ];
 
 export default function Projects(props: Prop) {
